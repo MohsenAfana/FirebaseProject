@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:text="Registration Template"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/colorPrimary">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:hint="@string/name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameET"
+        android:hint="@string/password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/sign_In_button"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordET"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Sign In "
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_In_button"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:text="OR"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/colorPrimary">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/sign_Up_button"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/or"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Sign Up "
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/sign_In_facebook"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_Up_button"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="facebook"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/sign_In_twitter"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_Up_button"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_toEndOf="@+id/sign_In_gmail"
+        android:text="twitter"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/sign_In_gmail"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_Up_button"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_toEndOf="@+id/sign_In_facebook"
+        android:text="gmail"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+
+</RelativeLayout>
